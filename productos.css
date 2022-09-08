@@ -1,0 +1,78 @@
+
+header {
+    background-color: #BBBBBB;
+}
+.caja{
+    width:94%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 3%;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: overline;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.productos{
+    width: 94%;
+    margin: 1% 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(255px, 1fr));
+    grid-row: max-content;
+}
+
+.productos li{
+    text-align: center;
+    border-radius: 3%;
+    border: 2px solid #333;
+    margin: 2px;
+    padding: 3px;
+}
+.productos li:hover{
+    border:#c78c19 2px solid;
+}
+.productos li:active{
+   border: #BBBBBB solid 2px;
+}
+.productos li:active .title{
+    font-size: 35px;
+ }
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 30px;
+    font-family: bold;
+    margin-top: 10px;
+}
+.title{
+    font-family: bold;
+    font-size: 30px;
+}
+@media  screen and (max-width:560px) {
+    .caja{
+        display: grid;
+        grid-column: 1fr;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (min-width:560px) {
+    nav {
+        position: absolute;
+        right:2%;
+        top: 110px;
+    }
+}
