@@ -253,3 +253,14 @@ img p:not#mision{
 .items:first-child{
     font-weight: bold;
 }
+@media screen and (max-width:450px) {
+    .imagenDiferenciales{
+        width: 100% !important;
+    }
+    .lista-diferenciales{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
