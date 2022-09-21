@@ -2,6 +2,21 @@
 header {
     background-color: #BBBBBB;
 }
+body{
+    width: 100%;
+    height: auto;
+}
+main{
+    max-width: 100%;
+    margin: 0 auto;
+}
+footer{
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-image: url("imagenes/bg.jpg");
+}
 .caja{
     width:94%;
     display: grid;
@@ -61,10 +76,80 @@ nav a{
     font-family: bold;
     font-size: 30px;
 }
+footer p{
+    color: aliceblue;
+    font-size: 13px;
+    margin:10px;
+    padding-bottom:10px ;
+}
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;    
+}
+
+form{
+    margin: 40px 0;
+}
+form input:focus, textarea:focus{
+    outline: #333 ;
+}
+
+form label, form legend, form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+    background-color: #c78c19;
+    border:none;
+    border-radius: 5px;
+    transition: 1.2s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+.tabla{
+    margin: 40px 40px;
+    font-size: 18px;
+}
+thead{
+    background-color: #555555;
+    color: #FFFFFF;
+}
+td,th{
+    border: rgb(198, 195, 195) solid 3px !important;
+    padding: 8px 15px !important;
+}
+
 @media  screen and (max-width:560px) {
     .caja{
         display: grid;
         grid-column: 1fr;
+        grid-row: 1fr;
         text-align: center;
         padding-bottom: 1rem;
     }
